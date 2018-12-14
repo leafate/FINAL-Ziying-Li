@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Anton|Roboto|Monoton" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    /*FLOATING TEXT BOX*/
+
+    .radial-gradient {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: #9b59b6;
+        background: radial-gradient( at center, #00292b, #000000);
+    }
+
+    body {
+
+        letter-spacing: 0.1em;
+        text-shadow: 0px 0px 15px black;
+        margin-left: -15px;
+    }
+
+    a {
+        color: #FFFFFF;
+    }
+
+    div.box1 {
+        font-family: 'Monoton', cursive;
+        position: relative;
+
+        width: 120px;
+        height: 30px;
+
+        font-size: 25px;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-animation: box-1 3s infinite;
+        animation: box-1 3s infinite alternate;
+    }
+
+    div.box2 {
+        font-family: 'Monoton', cursive;
+
+        width: 120px;
+        height: 40px;
+
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        transform: rotate(90deg);
+        -webkit-animation: box-2 3s infinite;
+        animation: box-2 3s infinite alternate;
+    }
+
+    div.box3 {
+        font-family: 'Monoton', cursive;
+        color: black;
+        width: 170px;
+        height: 40px;
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-animation: box-3 3s infinite;
+        animation: box-3 3s infinite alternate;
+    }
+
+    div.box4 {
+        font-family: 'Monoton', cursive;
+        color: white;
+        width: 120px;
+        height: 40px;
+
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-animation: box-4 3s infinite;
+        animation: box-4 3s infinite alternate;
+    }
+
+    @keyframes box-1 {
+        from {
+            top: 40px;
+            left: 15px;
+        }
+        to {
+            top: 120px;
+            left: 15px;
+        }
+    }
+
+
+    @keyframes box-2 {
+        from {
+            top: 0px;
+            right: 70px
+        }
+        to {
+            top: 0px;
+            right: -80px;
+        }
+    }
+
+
+    @keyframes box-3 {
+        from {
+            top: 0px;
+            left: 1250px;
+        }
+        to {
+            top: 0px;
+            left: 1100px;
+        }
+    }
+
+
+    @keyframes box-4 {
+        from {
+            top: -130px;
+            left: 1200px
+        }
+        to {
+            top: 50px;
+            left: 1200px;
+        }
+    }
+
+    a:link {
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: #396372;
+    }
+
+    .text {
+        color: white;
+    }
+
+</style>
+
+<body>
+    <div class="radial-gradient">
+        <div class="box1"><a href="index.html" target="_blank">HOME</a></div>
+        <div class="box2"><a href="Superpower.html" target="_blank">SUPERPOWER</a></div>
+        <div class="box3"><a href="Residence.html" target="_blank">RESIDENCE</a></div>
+        <div class="box4"><a href="Enemy.html" target="_blank">ENEMY</a></div>
+
+        <!--SOCIAL MEDIA-->
+        <span class="fa-stack">
+		<a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook"></i></a>
+		<a href="https://twitter.com/" target="_blank"> <i class="fa fa-twitter"></i></a>
+		<a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram"></i></a>
+</span>
+
+        <!--ORIGIN-->
+        <div class="title-origin">
+
+            <h1><b>Origin</b></h1>
+
+            <p> During the 30th century, Human created destructive weapons that can be harmful for any creature. The governments were fighting for more power and territories. Most people died because of the poisoning weapons. As the daughter of the sun, the last goddess that is meant to protect the earth. Faora decided to use almost all her power to go back to the time when the weapon hadn't been invented. Her mission is to change the future of human distinction. She cannot directly change the consequence that lead to the end of the human distinction ;but she can affect others in small ways. Once she finishes her job, she will have to disappear forever.....</p>
+        </div>
+    </div>
+
+    <!--JAVA SCRIPT-->
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+
+    </script>
+
+    <script>
+        /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+
+    </script>
+
+
+
+</body>
+
+</html>

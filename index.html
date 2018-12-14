@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Poiret+One" rel="stylesheet">
+
+    <style>
+        body {}
+
+        .bg-image {
+
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            left: 0px;
+            top: 0px;
+            z-index: -1;
+        }
+
+        .stretch {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+
+
+        /*NAVIGATION*/
+
+        .nav {
+            height: 44%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: black;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding: 5px 5px 5px 5px;
+        }
+
+        .nav a {
+            padding: 10px 10px 10px 34px;
+            text-decoration: none;
+            font-family: 'Libre Baskerville', serif;
+            color: white;
+            font-size: 16px;
+            letter-spacing: inherit;
+            color: black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .nav a:hover {
+            color: #f1f1f1;
+        }
+
+        .nav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 65px;
+        }
+
+        .menu-bar {
+            color: #396372;
+            position: relative;
+            top: 5px;
+            padding-left: 20px;
+        }
+
+        .closebtn {
+            top: 300px;
+        }
+
+        .title {
+            font-size: 12px;
+            top: 300px;
+            padding-left: 200px;
+        }
+
+        /* source url - https://www.w3schools.com/howto/howto_js_sidenav.asp*/
+
+        /*NAVIGATION DROPDOWN*/
+
+        .nav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            color: white;
+            display: block;
+            border: none;
+            background: none;
+            width: 100%;
+            text-align: left;
+            cursor: pointer;
+            outline: none;
+            padding-left: 15px;
+        }
+
+        .nav a:hover {
+            color: #396372;
+            font-size: 18px;
+        }
+
+        .main {
+            margin-left: 200px;
+            /* Same as the width of the sidenav */
+            font-size: 20px;
+            /* Increased text to enable scrolling */
+            padding: 0px 10px;
+        }
+
+        .active {
+            background-color: none;
+            color: white;
+        }
+
+        .dropdown-container {
+            background-color: white;
+            padding-left: 15px;
+
+        }
+
+        .fa-caret-down {
+            background-color: white;
+            float: right;
+        }
+
+
+        h1 {
+            font-family: 'Poiret One', cursive;
+
+            color: #7f2827;
+            font-size: 120px;
+
+            padding-top: 162px;
+            padding-left: 670px;
+        }
+
+        h2 {
+            font-family: 'Poiret One', cursive;
+            color: #dfb08c;
+            font-size: 22px;
+            padding-top: -300px;
+            padding-left: 800px;
+
+        }
+
+        p {
+            font-size: 16px;
+            top: 300px;
+            padding-left: 200px;
+        }
+
+
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+            .sidenav a {
+                font-size: 15px;
+            }
+        }
+
+        /* source url - https://www.w3schools.com/howto/howto_js_dropdown_sidenav.asp*/
+
+    </style>
+
+
+
+</head>
+
+
+<body>
+    <div class="bg-image">
+        <img src="images/bg.png" class="stretch" alt="" />
+
+    </div>
+    <div id="sidenav" class="nav">
+        <a href="index.html">HOME</a>
+        <hr style='background-color:#396372; border-width:0; color:#396372; height:2px; lineheight:0; text-align: left; width:95%;' />
+        <a href="Origin.html">ORIGIN</a>
+        <hr style='background-color:#396372; border-width:0; color:#396372; height:2px; lineheight:0; text-align: left; width:95%;' />
+        <a href="Superpower.html">SUPER POWER</a>
+        <hr style='background-color:#396372; border-width:0; color:#396372; height:2px; lineheight:0; text-align: left; width:95%;' />
+        <a href="Residence.html">RESIDENCE</a>
+        <hr style='background-color:#396372; border-width:0; color:#000000; height:2px; lineheight:0; text-align: left; width:95%;' />
+        <a href="Enemy.html">ENEMY</a>
+
+
+    </div>
+
+
+    <span class="menu-bar" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+
+    </script>
+    <h1>FAORA</h1>
+
+
+
+</body>

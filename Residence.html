@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Anton|Roboto" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<style>
+    /*FLOATING TEXT BOX*/
+
+    .radial-gradient {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        height: 100%;
+        width: 100%;
+        background: #9b59b6;
+        background: radial-gradient( at center, #0a2552, #000000);
+    }
+
+    a {
+        color: #FFFFFF;
+    }
+
+
+    a:hover {
+        color: #3283c3;
+    }
+
+    h1 {
+
+        font-family: 'Anton', sans-serif;
+        padding-left: 250px;
+        font-size: 30px;
+        text-align: justify;
+
+    }
+
+    .text {
+        color: white;
+    }
+
+    div.box1 {
+        font-family: 'Monoton', cursive;
+        position: relative;
+
+        width: 120px;
+        height: 30px;
+        background-color: black;
+        font-size: 25px;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-animation: box-1 4s infinite;
+        animation: box-1 4s infinite alternate;
+    }
+
+    div.box2 {
+        font-family: 'Monoton', cursive;
+
+        width: 120px;
+        height: 40px;
+
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        transform: rotate(90deg);
+        -webkit-animation: box-2 4s infinite;
+        animation: box-2 4s infinite alternate;
+    }
+
+    div.box3 {
+        font-family: 'Monoton', cursive;
+        color: black;
+        width: 170px;
+        height: 40px;
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-animation: box-3 4s infinite;
+        animation: box-3 4s infinite alternate;
+    }
+
+    div.box4 {
+        font-family: 'Monoton', cursive;
+        color: white;
+        width: 120px;
+        height: 40px;
+
+        font-size: 25px;
+        position: relative;
+        text-align: center;
+        vertical-align: middle;
+        -webkit-animation: box-4 4s infinite;
+        animation: box-4 4s infinite alternate;
+    }
+
+    @keyframes box-1 {
+        from {
+            top: 40px;
+            left: 15px;
+        }
+        to {
+            top: 120px;
+            left: 15px;
+        }
+    }
+
+
+    @keyframes box-2 {
+        from {
+            top: 0px;
+            right: 70px
+        }
+        to {
+            top: 0px;
+            right: -80px;
+        }
+    }
+
+
+    @keyframes box-3 {
+        from {
+            top: 0px;
+            left: 1250px;
+        }
+        to {
+            top: 0px;
+            left: 1100px;
+        }
+    }
+
+
+    @keyframes box-4 {
+        from {
+            top: -130px;
+            left: 1200px
+        }
+        to {
+            top: 50px;
+            left: 1200px;
+        }
+    }
+
+    a:link {
+        text-decoration: none;
+        color: white;
+    }
+
+
+
+    @keyframes box-home {
+        from {
+            top: 40px;
+            left: 50px;
+        }
+        to {
+            top: 100px;
+            left: 50px;
+        }
+    }
+</style>
+
+<body>
+    <div class="radial-gradient">
+
+
+        <div class="box1"><a href="index.html" target="_blank">HOME</a></div>
+        <div class="box2"><a href="Origin.html" target="_blank">ORIGIN</a></div>
+        <div class="box3"><a href="Superpower.html" target="_blank">SUPERPOWER</a></div>
+        <div class="box4"><a href="Enemy.html" target="_blank">ENEMY</a></div>
+
+        <!--SOCIAL MEDIA-->
+        <span class="fa-stack">
+		<a href="https://www.facebook.com/" target="_blank"> <i class="fa fa-facebook"></i></a>
+		<a href="https://twitter.com/" target="_blank"> <i class="fa fa-twitter"></i></a>
+		<a href="https://www.instagram.com/" target="_blank"> <i class="fa fa-instagram"></i></a>
+</span>
+
+        <!--ORIGIN-->
+        <div class="title-origin">
+
+            <h1><b>Residence</b></h1>
+
+            <p>ICELAND<br> Because of the unusual body temperature she’ve got,<br>she has to stay at the place that has low temperature to keep her body balanced.<br>Iceland is a volcanic island in the North Atlantic Ocean east of Greenland and immediately south of the Arctic Circle. It lies about 4,200 kilometers (2,600 mi.) from New York and 830 kilometers (520 mi.) from Scotland. About 79% of Iceland's land area, which is of recent volcanic origin, consists of glaciers, lakes, a mountainous lava desert (highest elevation 2,000 meters--6,590 ft.--above sea level), and other wasteland. About 28% of the land is used for grazing, and 1% is cultivated. The inhabited areas are on the coast, particularly in the southwest where about 60% of the population lives. Because of the Gulf Stream's moderating influence, the climate is characterized by damp, cool summers and relatively mild but windy winters. In Reykjavík, the average temperature is 11°C (52°F) in July and -1°C (30°F) in January. </p>
+        </div>
+    </div>
+
+    <!--JAVA SCRIPT-->
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
